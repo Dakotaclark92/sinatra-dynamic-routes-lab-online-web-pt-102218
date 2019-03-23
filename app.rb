@@ -29,13 +29,19 @@ class App < Sinatra::Base
     number1 = params[:number1].to_i
     number2 = params[:number2].to_i
     
-    operation = error
+    operations = error
     
-    case 
-    when
-      'add'
-      operation = (number1 + number2).to_s
+    case params[:operaton]
+    when 'add'
+      operations = (number1 + number2).to_s
+    when 'subtract'
+      operations = (number1 - number2).to_s
+    when 'multiply'
+      operations = (number1 * number2).to_s
+    when 'divide'
+      operations = (number1 / number2).to_s
     end
+  end
     
 
 end
