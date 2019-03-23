@@ -7,6 +7,6 @@ class App < Sinatra::Base
   end
   
   get '/square/:number' do
-    (params[:number].to_i.sqrt)
+    params[:number].to_i.sqrt
 
 end
