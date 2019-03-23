@@ -22,6 +22,6 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5'
-  "#{params[:word1]}"
+  "#{params[:word1]} #{params[:word2]} "
 
 end
