@@ -14,6 +14,6 @@ class App < Sinatra::Base
     
     say ''
     
-    params
+    params[:number].to_i 
 
 end
