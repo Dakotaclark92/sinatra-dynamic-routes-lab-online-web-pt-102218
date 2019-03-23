@@ -33,7 +33,9 @@ class App < Sinatra::Base
     
     when
       'add'
-      operation = 
+      operation = (number1 + number2).to_s
+    end
+    
 
 end
 
