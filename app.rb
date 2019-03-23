@@ -33,7 +33,7 @@ class App < Sinatra::Base
     
     case params[:operaton]
     when 'add'
-      operations = (number1 + number2).to_i
+      operations = (number1 + number2).to_s
     when 'subtract'
       operations = (number1 - number2).to_s
     when 'multiply'
