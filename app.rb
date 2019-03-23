@@ -32,8 +32,8 @@ class App < Sinatra::Base
     operation = error
     
     when
-      add
-      
+      'add'
+      operation = 
 
 end
 
