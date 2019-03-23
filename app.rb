@@ -31,6 +31,7 @@ class App < Sinatra::Base
     
     operation = error
     
+    case 
     when
       'add'
       operation = (number1 + number2).to_s
