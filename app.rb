@@ -15,6 +15,10 @@ class App < Sinatra::Base
     say ''
     
     params[:number].to_i.times do
-      
+      say += params[:pharse]
+    end
+    
+    say
+  end
 
 end
